@@ -1,0 +1,31 @@
+POST http://localhost:3333/moto
+Content-Type: application/json
+
+{
+    "marca": "Yamaha1",
+    "cor": "Preta",
+    "placa": 379
+}
+
+###
+
+GET http://localhost:3333/moto?search=Yamaha2
+
+###
+
+GET http://localhost:3333/moto
+
+###
+
+PUT http://localhost:3333/moto/bc47e397-3465-4ba1-9bab-9f5b40c13c96
+Content-Type: application/json
+
+{
+    "marca": "Yamaha2",
+    "cor": "Azul",
+    "placa": 489
+}
+
+###
+
+DELETE http://localhost:3333/moto/bc47e397-3465-4ba1-9bab-9f5b40c13c96
